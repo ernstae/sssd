@@ -25,14 +25,14 @@ Clone this module to your puppet module directory (commonly /etc/puppet/modules)
 
 A bare minimum is to include the module like this:
 
-'''puppet
+'''ruby
   { "sssd" : }
 '''
 
 You can take it one step further (and should) for LDAP authentication, with your own 
 site details
 
-'''puppet
+'''ruby
   { "sssd" :
      ldap_base => "dc=example,dc=edu",
      allow_groups => ["group1","group2"],
